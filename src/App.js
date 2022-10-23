@@ -1,11 +1,9 @@
 import React from 'react'
+import Header from "./header.js"
 
 export default function App() {
-    /**
-     * Challenge: Set up state to track our count (initial value is 0)
-     */
-    return (
-        
+    return(
+        <Header />
 
     )
-}
+    }
