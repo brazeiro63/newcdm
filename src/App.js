@@ -1,9 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
 
-function App() {
-    return(
-        <div></div>
+export default function App() {
+    /**
+     * Challenge: Set up state to track our count (initial value is 0)
+     */
+    return (
+        
+
     )
 }
-export default App
