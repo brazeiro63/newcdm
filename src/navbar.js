@@ -1,54 +1,79 @@
-import React from "react";
-import "./style.css";
-
-// import { Container } from './styles';
+import React from 'react';
+import './style.css';
 
 function Navbar() {
+  const [menu, setMenu] = React.useState({
+    isVisible: false,
+    isExpanded: false,
+  });
+
+  function navToggle() {
+    setMenu(prevMenu => {
+      return {
+        isVisible: !prevMenu.isVisible,
+        isExpanded: !prevMenu.isExpanded,
+      };
+    });
+  }
   return (
-    <nav>
-      <ul id="primary--navigation" className="primary--navigation flex">
-        <li className="active">
-          <a href="#imoveis">
-            01
-            <span aria-hidden="true" className="nav--option">
+    <div className="flex">
+      <button
+        className="mobile--nav--toggle"
+        aria-controls="primary--navigation"
+        aria-expanded={menu.isExpanded}
+        onClick={navToggle}
+      >
+        <span className="sr-only"></span>
+      </button>
+      <nav>
+        <ul
+          id="primary--navigation"
+          data-visible={menu.isVisible}
+          className="primary--navigation flex"
+        >
+          <li className="active">
+            <a href="#imoveis">
+              <span aria-hidden="true" className="nav--option">
+                01
+              </span>
               Imóveis
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#comodidades">
-            02
-            <span aria-hidden="true" className="nav--option">
+            </a>
+          </li>
+          <li>
+            <a href="#comodidades">
+              <span aria-hidden="true" className="nav--option">
+                02
+              </span>
               Comodidades
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#atracoes">
-            03
-            <span aria-hidden="true" className="nav--option">
-              Atrações{" "}
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#anfitrioes">
-            04
-            <span aria-hidden="true" className="nav--option">
-              Anfitriões{" "}
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#contato">
-            05
-            <span aria-hidden="true" className="nav--option">
+            </a>
+          </li>
+          <li>
+            <a href="#atracoes">
+              <span aria-hidden="true" className="nav--option">
+                03
+              </span>
+              Atrações{' '}
+            </a>
+          </li>
+          <li>
+            <a href="#anfitrioes">
+              <span aria-hidden="true" className="nav--option">
+                04
+              </span>
+              Anfitriões{' '}
+            </a>
+          </li>
+          <li>
+            <a href="#contato">
+              <span aria-hidden="true" className="nav--option">
+                05
+              </span>
               Contato
-            </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }
 

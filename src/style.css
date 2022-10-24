@@ -4,12 +4,18 @@ html {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Bahnschrift-Font-Family',  sans-serif;
   background-image: url("./assets/background.jpg");
   background-size: cover;
-  color: #d9d9d9;
+  color: hsl(0, 0%,50% / 0.9);
   padding: 20px;
-  height: 100vh;
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a{
+  color: hsla(0, 0%, 25%, 0.85);
 }
 
 .flex {
@@ -28,6 +34,10 @@ body {
 .primary--header {
   align-items: center;
   justify-content: space-between;
+}
+
+.mobile--nav--toggle{
+  display: none;
 }
 
 .primary--navigation {
@@ -57,11 +67,56 @@ body {
 
 @media (max-width: 65em) {
   .primary--navigation {
-    --gap: 1rem;
-    font-size: 2rem;
+    --gap: 2rem;
+    font-size: 1.5em;
+
     position: fixed;
-    flex-direction: column;
+    z-index: 1000;
     inset: 0 0 0 40%;
+
+    flex-direction: column;
     padding: min(30vh, 10rem) 2em;
+
+    transform:  translateX(100%);
+    transition: transform 350ms ease-out;
+  }
+
+  .primary--navigation[data-visible="true"] {
+    transform:  translateX(0%);
+
+  }
+
+  .mobile--nav--toggle{
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background-color: transparent;
+    background: url("assets/shared/menu_black_36dp.svg");
+    background-size: cover;
+    border: 0;
+
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .mobile--nav--toggle[aria-expanded=true] {
+    background-image: url("assets/shared/close_black_36dp.svg");
+  }
+
+}
+
+@media (min-width: 65em) and (max-width: 85em) {
+  .primary--navigation a > span[aria-hidden]{
+    display: none;
+  }
+}
+
+@media (min-width: 65em) {
+  .primary--navigation{
+    --gap: 2.5rem;
+    padding-block: 2rem;
+    padding-inline: clamp(3rem, 5vw, 10rem);
   }
 }
