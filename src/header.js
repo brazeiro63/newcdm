@@ -1,14 +1,18 @@
 import React from "react";
+import Navbar from "./navbar.js";
+import logo from "./assets/logo.png"
+
 
 // import { Container } from './styles';
 
-export default function header() {
+export default function Header() {
+  
   return (
-    <div className="header">
+    <header className="primary--header flex">
       <div className="logo">
-        <img src="/asset/logo.png" alt="logo" className="logo--img" />
+        <img src={logo} alt="logo" className="logo--img" />
       </div>
-      <div className="logo--text">texto do logo</div>
-    </div>
+      <Navbar />
+    </header>
   );
 }
