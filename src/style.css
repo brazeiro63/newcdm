@@ -4,17 +4,17 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Bahnschrift-Font-Family',  sans-serif;
-  background-image: url("./assets/background.jpg");
+  font-family: 'Bahnschrift-Font-Family', sans-serif;
+  background-image: url('./assets/background.jpg');
   background-size: cover;
-  color: hsl(0, 0%,50% / 0.9);
+  color: hsl(0, 0%, 50% / 0.9);
   padding: 20px;
   line-height: 1.5;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-a{
+a {
   color: hsla(0, 0%, 25%, 0.85);
 }
 
@@ -36,7 +36,7 @@ a{
   justify-content: space-between;
 }
 
-.mobile--nav--toggle{
+.mobile--nav--toggle {
   display: none;
 }
 
@@ -59,7 +59,7 @@ a{
 .primary--navigation a {
   text-decoration: none;
 }
-.primary--navigation a > [aria-hidden="true"] {
+.primary--navigation a > [aria-hidden='true'] {
   font-weight: 700;
   padding: 0 0.3rem;
   margin-inline-end: 0.75em;
@@ -77,44 +77,42 @@ a{
     flex-direction: column;
     padding: min(30vh, 10rem) 2em;
 
-    transform:  translateX(100%);
+    transform: translateX(100%);
     transition: transform 350ms ease-out;
   }
 
-  .primary--navigation[data-visible="true"] {
-    transform:  translateX(0%);
-
+  .primary--navigation[data-visible='true'] {
+    transform: translateX(0%);
   }
 
-  .mobile--nav--toggle{
+  .mobile--nav--toggle {
     display: block;
     position: absolute;
     z-index: 9999;
     background-color: transparent;
-    background: url("assets/shared/menu_black_36dp.svg");
+    background: url('assets/shared/menu_black_36dp.svg');
     background-size: cover;
     border: 0;
 
-    width: 2rem;
+    width: 4rem;
     aspect-ratio: 1;
     top: 2rem;
     right: 2rem;
   }
 
-  .mobile--nav--toggle[aria-expanded=true] {
-    background-image: url("assets/shared/close_black_36dp.svg");
+  .mobile--nav--toggle[aria-expanded='true'] {
+    background-image: url('assets/shared/close_black_36dp.svg');
   }
-
 }
 
 @media (min-width: 65em) and (max-width: 85em) {
-  .primary--navigation a > span[aria-hidden]{
+  .primary--navigation a > span[aria-hidden] {
     display: none;
   }
 }
 
 @media (min-width: 65em) {
-  .primary--navigation{
+  .primary--navigation {
     --gap: 2.5rem;
     padding-block: 2rem;
     padding-inline: clamp(3rem, 5vw, 10rem);
