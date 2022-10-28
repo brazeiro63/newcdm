@@ -31,6 +31,12 @@ a {
   width: 200px;
 }
 
+.header {
+  display: flex;
+
+  flex-direction: column;
+}
+
 .primary--header {
   align-items: center;
   justify-content: space-between;
