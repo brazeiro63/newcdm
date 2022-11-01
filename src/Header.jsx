@@ -43,6 +43,14 @@ export default function Header() {
               className="primary--navigation flex"
             >
               <li className="active">
+                <Link to="/">
+                  <span aria-hidden="true" className="nav--option">
+                    00
+                  </span>
+                  Home
+                </Link>
+              </li>
+              <li className="active">
                 <Link to="/imoveis">
                   <span aria-hidden="true" className="nav--option">
                     01

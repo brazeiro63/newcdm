@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header.jsx';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home.jsx';
 import Atracoes from './Pages/Atracoes.jsx';
 import Comodidades from './Pages/Comodidades.jsx';
