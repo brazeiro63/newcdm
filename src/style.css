@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: hsla(0, 0%, 25%, 0.85);
+  color: hsl(0 0% 25% 0.85);
 }
 
 .flex {
@@ -28,6 +28,7 @@ a {
   margin: 0.2rem;
   padding: 0 20px;
 }
+
 .logo--img {
   width: 180px;
 }
@@ -93,7 +94,8 @@ a {
 .primary--navigation a {
   text-decoration: none;
 }
-.primary--navigation a > [aria-hidden='true'] {
+
+.primary--navigation a>[aria-hidden='true'] {
   font-weight: 700;
   padding: 0 0.3rem;
   margin-inline-end: 0.75em;
@@ -140,7 +142,7 @@ a {
 }
 
 @media (min-width: 65em) and (max-width: 85em) {
-  .primary--navigation a > span[aria-hidden] {
+  .primary--navigation a>span[aria-hidden] {
     display: none;
   }
 }
