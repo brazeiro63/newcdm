@@ -1,13 +1,14 @@
 .container {
-  width: 95vw;
+  width: 100vw;
   display: flex;
+  /* flex-direction: column; */
   justify-content: space-between;
   margin: 0 auto;
   flex-wrap: wrap;
 }
 
 .min-height {
-  min-height: 75vh;
+  min-height: 77vh;
 }
 
 .start {
