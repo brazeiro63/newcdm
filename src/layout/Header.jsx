@@ -1,10 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import logo from './assets/logo.png';
-// import './style.css';
-
-// import { Container } from './styles';
+import logo from '../assets/logo.png';
 
 export default function Header() {
   const [menu, setMenu] = useState({
