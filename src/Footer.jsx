@@ -7,21 +7,28 @@ function Footer() {
       <ul className="social--list">
         <li>
           <a href="https://www.facebook.com/profile.php?id=100087083040479">
-            {' '}
             <FaFacebook />
           </a>
         </li>
         <li>
-          <FaInstagram />
+          <a href="https://instagram.com/casasdemargarida">
+            <FaInstagram />
+          </a>
         </li>
         <li>
-          <FaWhatsapp />
+          <a href="https://wa.me/+5561992172427">
+            <FaWhatsapp />
+          </a>
         </li>
         <li>
-          <FaAirbnb />
+          <a href="https://airbnb.com.br/p/casasdemargarida">
+            <FaAirbnb />
+          </a>
         </li>
         <li>
-          <FaTripadvisor />
+          <a href="https://www.tripadvisor.com.br/VacationRentalReview-g488168-d24158166-Casas_de_Margarida_Casa_na_Quarta_Praia_Morro_de_Sao_Paulo_BA-Morro_de_Sao_Paulo_Ilha.html">
+            <FaTripadvisor />
+          </a>
         </li>
       </ul>
       <p>
