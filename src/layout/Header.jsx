@@ -40,7 +40,7 @@ export default function Header() {
               className="primary--navigation flex"
             >
               <li className="active">
-                <Link to="/">
+                <Link to="/" onClick={navToggle}>
                   <span aria-hidden="true" className="nav--option">
                     00
                   </span>
@@ -48,7 +48,7 @@ export default function Header() {
                 </Link>
               </li>
               <li className="active">
-                <Link to="/imoveis">
+                <Link to="/imoveis" onClick={navToggle}>
                   <span aria-hidden="true" className="nav--option">
                     01
                   </span>
@@ -56,7 +56,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/comodidades">
+                <Link to="/comodidades" onClick={navToggle}>
                   <span aria-hidden="true" className="nav--option">
                     02
                   </span>
@@ -64,7 +64,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/atracoes">
+                <Link to="/atracoes" onClick={navToggle}>
                   <span aria-hidden="true" className="nav--option">
                     03
                   </span>
@@ -72,7 +72,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/anfitrioes">
+                <Link to="/anfitrioes" onClick={navToggle}>
                   <span aria-hidden="true" className="nav--option">
                     04
                   </span>
@@ -80,7 +80,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/contato">
+                <Link to="/contato" onClick={navToggle}>
                   <span aria-hidden="true" className="nav--option">
                     05
                   </span>

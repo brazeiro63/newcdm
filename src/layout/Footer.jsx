@@ -1,10 +1,28 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaWhatsapp, FaAirbnb, FaTripadvisor } from 'react-icons/fa';
+import {
+  FaFacebook,
+  FaInstagram,
+  FaWhatsapp,
+  FaAirbnb,
+  FaTripadvisor,
+  FaMailBulk,
+  FaPhone,
+} from 'react-icons/fa';
 
 function Footer() {
   return (
     <footer className="footer--container">
       <ul className="social--list">
+        <li>
+          <a href="mailto:casasdemargarida@gmail.com">
+            <FaMailBulk />
+          </a>
+        </li>
+        <li>
+          <a href="tel:+5561992172427">
+            <FaPhone />
+          </a>
+        </li>
         <li>
           <a href="https://www.facebook.com/profile.php?id=100087083040479">
             <FaFacebook />
