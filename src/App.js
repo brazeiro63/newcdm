@@ -9,6 +9,10 @@ import Contato from './Pages/Contato.jsx';
 import Imoveis from './Pages/Imoveis.jsx';
 import Footer from './layout/Footer.jsx';
 import Container from './layout/Container.jsx';
+import ImoveisMorro from './Pages/ImoveisMorro.jsx';
+import ImoveisMaceio from './Pages/ImoveisMaceio.jsx';
+import ImoveisMuro from './Pages/ImoveisMuro.jsx';
+import ImoveisPorto from './Pages/ImoveisPorto.jsx';
 
 export default function App() {
   return (
@@ -17,7 +21,11 @@ export default function App() {
       <Container customClass="min-height">
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/imoveis" element={<Imoveis />} />
+          <Route exact path="/imoveis" element={<Imoveis />} />
+          <Route path="/imoveismorro" element={<ImoveisMorro />} />
+          <Route path="/imoveismaceio" element={<ImoveisMaceio />} />
+          <Route path="/imoveismuro" element={<ImoveisMuro />} />
+          <Route path="/imoveisporto" element={<ImoveisPorto />} />
           <Route path="/atracoes" element={<Atracoes />} />
           <Route path="/comodidades" element={<Comodidades />} />
           <Route path="/anfitrioes" element={<Anfitrioes />} />

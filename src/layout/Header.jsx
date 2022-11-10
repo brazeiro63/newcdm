@@ -47,8 +47,8 @@ export default function Header() {
                   Home
                 </Link>
               </li>
-              <li className="active">
-                <Link to="/imoveis" onClick={navToggle}>
+              <li>
+                <Link to="/imoveismorro" onClick={navToggle}>
                   <span aria-hidden="true" className="nav--option">
                     01
                   </span>

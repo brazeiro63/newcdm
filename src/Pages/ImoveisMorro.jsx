@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
-import '../style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import '../style.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Image01 from '../assets/images/imoveis/imovelMorro/imovelMorro01.jpg';
 import Image02 from '../assets/images/imoveis/imovelMorro/imovelMorro02.jpg';
 import Image03 from '../assets/images/imoveis/imovelMorro/imovelMorro03.jpg';
@@ -30,9 +30,8 @@ import Image24 from '../assets/images/imoveis/imovelMorro/imovelMorro24.jpg';
 import Image26 from '../assets/images/imoveis/imovelMorro/imovelMorro26.jpg';
 import Image27 from '../assets/images/imoveis/imovelMorro/imovelMorro27.jpg';
 import Image28 from '../assets/images/imoveis/imovelMorro/imovelMorro28.jpg';
-import { ToggleButton } from 'react-bootstrap';
 
-const Imoveis = () => {
+const ImoveisMorro = () => {
   const meusItens = [
     Image01,
     Image02,
@@ -67,27 +66,33 @@ const Imoveis = () => {
     <>
       <div className="pages--container">
         <div className="pages--text">
-          <h1 className="pages--text--title">Imóveis Geral</h1>
+          <h1 className="pages--text--title">Imóvel Morro de São Paulo</h1>
           <p className="pages--text--body">
             Casas de Margarida oferece imóveis nas melhores praias do nordeste do Brasil.
             <br />
-            <Link to="/imoveismorro" onClick={ToggleButton}>
-              <strong>Morro de São Paulo</strong>
+            <strong>Morro de São Paulo</strong>- Cairú(BA) - casa de 110 m<sup>2</sup>&nbsp; na
+            Quarta Praia, muito aconchegante e cercada de verde. Acomoda até 8 pessoas.
+            <br />
+            <Link to="/imoveismuro">
+              <strong>Muro Alto</strong>
             </Link>
-            - Cairú(BA) - casa de 110 m<sup>2</sup>&nbsp; na Quarta Praia, muito aconchegante e
-            cercada de verde. Acomoda até 8 pessoas.
+            - Ipojuca(PE) - flat confortável para até 4 pessoas. Dentro de um condomínio com toda
+            estrutura de lazer
             <br />
-            <strong>Muro Alto</strong> - Ipojuca(PE) - flat confortável para até 4 pessoas. Dentro
-            de um condomínio com toda estrutura de lazer
+            <Link to="/imoveismaceio">
+              <strong>Pajuçara</strong>
+            </Link>
+            - Maceió(AL) - apto duplex para até 6 pessoas. Excelente localização, em frente as
+            piscinas de Pajuçara, e próximo a tudo.
             <br />
-            <strong>Pajuçara</strong> - Maceió(AL) - apto duplex para até 6 pessoas. Excelente
-            localização, em frente as piscinas de Pajuçara, e próximo a tudo.
-            <br />
-            <strong>Porto de Galinhas</strong> - Ipojuca(PE) (Em br/eve) - apartamento de 105 m
-            <sup>2</sup>&nbsp;- para até 8 pessoas. Pé na areia, na melhor localização de Porto de
-            Galinhas.
+            <Link to="/imoveisporto">
+              <strong>Porto de Galinhas</strong>
+            </Link>
+            - Ipojuca(PE) (Em br/eve) - apartamento de 105 m<sup>2</sup>&nbsp;- para até 8 pessoas.
+            Pé na areia, na melhor localização de Porto de Galinhas.
             <br />
           </p>
+          <Outlet />
         </div>
         <div className="pages--image">
           <Carousel fade>
@@ -108,4 +113,4 @@ const Imoveis = () => {
   );
 };
 
-export default Imoveis;
+export default ImoveisMorro;

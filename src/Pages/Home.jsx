@@ -27,9 +27,9 @@ const Home = () => {
               return (
                 <Carousel.Item interval={2000} key={index}>
                   <img className="d-block w-100" src={item} alt="Slide" />
-                  <Carousel.Caption>
+                  {/* <Carousel.Caption>
                     <h3>Caption</h3>
-                  </Carousel.Caption>
+                  </Carousel.Caption> */}
                 </Carousel.Item>
               );
             })}
