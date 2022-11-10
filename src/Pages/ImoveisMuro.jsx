@@ -15,12 +15,12 @@ import Image09 from '../assets/images/imoveis/imovelMuro/imovelMuro09.jpg';
 import Image10 from '../assets/images/imoveis/imovelMuro/imovelMuro10.jpg';
 import Image11 from '../assets/images/imoveis/imovelMuro/imovelMuro11.jpg';
 import Image12 from '../assets/images/imoveis/imovelMuro/imovelMuro12.jpg';
-import Image13 from '../assets/images/imoveis/imovelMuro/imovelMuro13.jpg';
+// import Image13 from '../assets/images/imoveis/imovelMuro/imovelMuro13.jpg';
 import Image14 from '../assets/images/imoveis/imovelMuro/imovelMuro14.jpg';
 import Image15 from '../assets/images/imoveis/imovelMuro/imovelMuro15.jpg';
-import Image16 from '../assets/images/imoveis/imovelMuro/imovelMuro16.jpg';
+// import Image16 from '../assets/images/imoveis/imovelMuro/imovelMuro16.jpg';
 import Image17 from '../assets/images/imoveis/imovelMuro/imovelMuro17.jpg';
-import Image18 from '../assets/images/imoveis/imovelMuro/imovelMuro18.jpg';
+// import Image18 from '../assets/images/imoveis/imovelMuro/imovelMuro18.jpg';
 import Image19 from '../assets/images/imoveis/imovelMuro/imovelMuro19.jpg';
 import Image20 from '../assets/images/imoveis/imovelMuro/imovelMuro20.jpg';
 import Image21 from '../assets/images/imoveis/imovelMuro/imovelMuro21.jpg';
@@ -40,12 +40,12 @@ const ImoveisMuro = () => {
     Image10,
     Image11,
     Image12,
-    Image13,
+    // Image13,
     Image14,
     Image15,
-    Image16,
+    // Image16,
     Image17,
-    Image18,
+    // Image18,
     Image19,
     Image20,
     Image21,
@@ -70,9 +70,9 @@ const ImoveisMuro = () => {
             - Ipojuca(PE) - flat confortável para até 4 pessoas. Dentro de um condomínio com toda
             estrutura de lazer
             <br />
-            <Link to="/imoveismaceio">
-              <strong>Pajuçara</strong>
-            </Link>
+            {/* <Link to="/imoveismaceio"> */}
+            <strong>Pajuçara</strong>
+            {/* </Link> */}
             - Maceió(AL) - apto duplex para até 6 pessoas. Excelente localização, em frente as
             piscinas de Pajuçara, e próximo a tudo.
             <br />

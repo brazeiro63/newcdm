@@ -79,15 +79,15 @@ export default function Header() {
                   Anfitriões{' '}
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/contato" onClick={navToggle}>
                   <span aria-hidden="true" className="nav--option">
                     05
                   </span>
                   Contato
                 </Link>
-                <Outlet />
-              </li>
+              </li> */}
+              <Outlet />
             </ul>
           </nav>
         </div>

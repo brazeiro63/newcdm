@@ -32,9 +32,9 @@ const ImoveisPorto = () => {
             - Ipojuca(PE) - flat confortável para até 4 pessoas. Dentro de um condomínio com toda
             estrutura de lazer
             <br />
-            <Link to="/imoveismaceio">
-              <strong>Pajuçara</strong>
-            </Link>
+            {/* <Link to="/imoveismaceio"> */}
+            <strong>Pajuçara</strong>
+            {/* </Link> */}
             - Maceió(AL) - apto duplex para até 6 pessoas. Excelente localização, em frente as
             piscinas de Pajuçara, e próximo a tudo.
             <br />
