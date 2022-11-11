@@ -9,7 +9,7 @@ body,
 
 body {
   margin: 0;
-  background-image: url('./assets/background.jpg');
+  /* background-image: url('./assets/background.jpg'); */
   background-size: cover;
   color: hsl(0, 0%, 50% / 0.9);
   padding: 0;
@@ -85,7 +85,7 @@ a {
 }
 .pages--text--body {
   font-family: 'BAHNSCHRIFT text', sans-serif;
-  font-size: 22px;
+  font-size: 2.5rem;
   font-weight: 400;
   text-align: justify;
   padding: 4%;
@@ -151,7 +151,7 @@ a {
 @media (max-width: 65em) {
   .primary--navigation {
     --gap: 2rem;
-    font-size: 1.5em;
+    font-size: 2.2em;
 
     position: fixed;
     z-index: 1000;
@@ -164,8 +164,12 @@ a {
     transition: transform 350ms ease-out;
   }
 
+  .pages--text--body {
+    font-size: 2.1rem;
+  }
+
   .primary--navigation a {
-    color: hsl(0 23% 5% / 1);
+    color: hsl(0 18% 3% / 1);
   }
 
   .primary--navigation[data-visible='true'] {
@@ -191,27 +195,6 @@ a {
     background-image: url('assets/shared/close_black_36dp.svg');
   }
 }
-
-@media (min-width: 65em) and (max-width: 85em) {
-  .primary--navigation a > span[aria-hidden] {
-    display: none;
-  }
-
-  .pages--container {
-    flex-direction: row;
-  }
-  .pages--image {
-    width: 50%;
-    height: 75vh;
-    padding: 0;
-  }
-
-  .pages--text {
-    width: 50%;
-    height: 75vh;
-    padding: 5px;
-  }
-}
 @media (min-width: 65em) {
   .pages--container {
     flex-direction: row;
@@ -228,10 +211,38 @@ a {
     height: 75vh;
     padding: 5px;
   }
+  .pages--text--body {
+    font-size: 1.5rem;
+  }
 
   .primary--navigation {
     --gap: 2rem;
     padding-block: 2rem;
     padding-inline: clamp(3rem, 5vw, 10rem);
+  }
+
+  @media (min-width: 65em) and (max-width: 85em) {
+    .primary--navigation a > span[aria-hidden] {
+      display: none;
+    }
+
+    .pages--container {
+      flex-direction: row;
+    }
+    .pages--image {
+      width: 50%;
+      height: 75vh;
+      padding: 0;
+    }
+
+    .pages--text {
+      width: 50%;
+      height: 75vh;
+      padding: 5px;
+    }
+
+    .pages--text--body {
+      font-size: 1.3rem;
+    }
   }
 }
