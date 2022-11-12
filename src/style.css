@@ -9,7 +9,7 @@ body,
 
 body {
   margin: 0;
-  /* background-image: url('./assets/background.jpg'); */
+  background-image: url('./assets/background.jpg');
   background-size: cover;
   color: hsl(0, 0%, 50% / 0.9);
   padding: 0;
@@ -181,7 +181,7 @@ a {
     position: absolute;
     z-index: 9999;
     background-color: transparent;
-    background: url('assets/shared/menu_black_36dp.svg');
+    background: url('assets/shared/menu_white_36dp.svg');
     background-size: cover;
     border: 0;
 
@@ -192,7 +192,7 @@ a {
   }
 
   .mobile--nav--toggle[aria-expanded='true'] {
-    background-image: url('assets/shared/close_black_36dp.svg');
+    background-image: url('assets/shared/close_white_36dp.svg');
   }
 }
 @media (min-width: 65em) {
