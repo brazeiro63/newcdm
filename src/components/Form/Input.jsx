@@ -24,11 +24,21 @@ export default function Input({ name, label, ...rest }) {
 
   return (
     <>
-      <label htmlFor={fieldName}>{label}</label>
+      <div className="form--field">
+        <label className="label" htmlFor={fieldName}>
+          {label}
+        </label>
 
-      <input id={fieldName} ref={inputRef} defaultValue={defaultValue} {...rest} />
+        <input
+          className="form--input"
+          id={fieldName}
+          ref={inputRef}
+          defaultValue={defaultValue}
+          {...rest}
+        />
 
-      {error && <span className="error">{error}</span>}
+        {error && <span className="error">{error}</span>}
+      </div>
     </>
   );
 }

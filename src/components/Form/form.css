@@ -1,0 +1,21 @@
+.form--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form--field {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 20vw;
+  padding: 5px;
+}
+
+.form--input {
+  border-radius: 15vh 15vh;
+  text-align: justify;
+  width: 100%;
+}

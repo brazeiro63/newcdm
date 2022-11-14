@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import ReactDatePicker from 'react-datepicker';
 import { useField } from '@unform/core';
 import 'react-datepicker/dist/react-datepicker.css';
+import './form.css';
 
 export default function DatePicker({ name, label, ...rest }) {
   const datepickerRef = useRef(null);
@@ -21,9 +22,19 @@ export default function DatePicker({ name, label, ...rest }) {
 
   return (
     <>
-      <label htmlFor={fieldName}>{label}</label>
-      <ReactDatePicker ref={datepickerRef} selected={date} onChange={setDate} {...rest} />
-      {error && <span className="error">{error}</span>}
+      <div className="form--field">
+        <div>
+          <label htmlFor={fieldName}>{label}</label>
+        </div>
+        <ReactDatePicker
+          className="form--input"
+          ref={datepickerRef}
+          selected={date}
+          onChange={setDate}
+          {...rest}
+        />
+        {error && <span className="error">{error}</span>}
+      </div>
     </>
   );
 }

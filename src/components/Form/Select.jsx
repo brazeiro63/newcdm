@@ -29,10 +29,16 @@ export default function Select({ name, label, children, ...rest }) {
   }, [fieldName, registerField]);
 
   return (
-    <div>
+    <div className="form--field">
       <label htmlFor={fieldName}>{label}</label>
 
-      <select id={fieldName} ref={selectRef} defaultValue={defaultValue} {...rest}>
+      <select
+        className="form-input"
+        id={fieldName}
+        ref={selectRef}
+        defaultValue={defaultValue}
+        {...rest}
+      >
         {children}
       </select>
 
