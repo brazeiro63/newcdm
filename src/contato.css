@@ -16,7 +16,7 @@ body {
   padding: 10px;
 }
 
-.register-form {
+.Contact-form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -40,10 +40,10 @@ body {
   border-radius: 0.25rem;
 }
 
-span {
+.contact-form span {
   font-family: 'Bahnschrift-Font-Family', sans-serif;
   /* font-size: 14px; */
-  /* color: red; */
+  color: red;
   margin-bottom: 15px;
 }
 
@@ -59,9 +59,12 @@ input {
 button {
   background: #ff8400;
   color: #131313;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
   border-radius: 0.25rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 2rem;
 }
 
 button:disabled {
